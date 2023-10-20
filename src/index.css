@@ -38,6 +38,9 @@ body {
 .MuiButton-root {
   text-transform: capitalize !important;
 }
+.bio {
+  margin-left: 20px;
+}
 
 @media screen and (max-width: 600px) {
   body {
@@ -47,7 +50,7 @@ body {
   .bio {
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
+    margin-left: 20px;
   }
   .otherDetails {
     width: 100% !important;

@@ -44,8 +44,8 @@ function SearchBar({ setUserData, setLoading }) {
       </FormControl>
       {error && (
         <Alert severity="error">
-          <AlertTitle>Error</AlertTitle>
-          {error}
+          <AlertTitle>{error === 'Not Found' ? 'User not found' : 'Error'}</AlertTitle>
+          {error === 'Not Found' ? 'We are sorry, we did not find a user with that name.' : error}
         </Alert>
       )}
     </>

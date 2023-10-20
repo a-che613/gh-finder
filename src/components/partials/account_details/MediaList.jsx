@@ -1,9 +1,10 @@
 import { Button } from '@mui/material';
 import PropTypes from 'prop-types';
 
-const MediaList = ({ icon, value }) => (
+const MediaList = ({ icon, value, href }) => (
   <>
     <Button
+      href={href}
       sx={{
         textTransform: 'lowercase', textWrap: 'nowrap', overflow: 'ellipsis',
       }}
@@ -17,6 +18,7 @@ const MediaList = ({ icon, value }) => (
 MediaList.propTypes = {
   icon: PropTypes.element.isRequired,
   value: PropTypes.string.isRequired,
+  href: PropTypes.string.isRequired,
 };
 
 export default MediaList;

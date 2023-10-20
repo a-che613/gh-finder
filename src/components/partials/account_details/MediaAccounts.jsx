@@ -16,10 +16,10 @@ const MediaAccounts = ({ userData }) => (
         <MediaList icon={<TwitterIcon />} value={userData.twitter_username || 'Not Specified'} />
       </Grid>
       <Grid item xs={12} md={6}>
-        <MediaList icon={<InsertLinkIcon />} value={userData.blog || 'Not Specified'} />
+        <MediaList icon={<InsertLinkIcon />} value={userData.blog ? '@github blog' : 'No Blog'} href={userData.blog || ''} />
       </Grid>
       <Grid item xs={12} md={6}>
-        <MediaList icon={<GitHubIcon />} value={userData.html_url || 'Not Specified'} />
+        <MediaList icon={<GitHubIcon />} value={userData.html_url ? '@github' : 'No github link'} href={userData.html_url || ''} />
       </Grid>
     </Grid>
   </>
