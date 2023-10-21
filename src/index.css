@@ -1,12 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Poppins&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Inconsolata', monospace !important;
+  /* font-family: 'Heebo', sans-serif !important; */
 }
 
 body {
   background-color: #141c2f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Heebo', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+
+}
+
+.container {
+  width: 100%;
+}
+
+.MuiGrid-root {
+  margin: 0 !important;
+}
+.MuiButton-root {
+  text-transform: capitalize !important;
+}
+.bio {
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    display: block;
+    padding: 20px;
+  }
+  .bio {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  .otherDetails {
+    width: 100% !important;
+  }
+  .finder {
+    width: 100% !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .finder {
+    width: 50% !important;
+  }
 }
